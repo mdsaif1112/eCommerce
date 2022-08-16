@@ -1,0 +1,161 @@
+@import 'colors';
+.footer{
+    background: #000;
+    &__container{
+        width: 1500px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .footer__top{
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: top;
+            padding: 100px 0 40px 0;
+            .footer__box{
+                .box__title{
+                    h5{
+                        color: white;
+                        margin-bottom: 15px;
+                    }
+                    p{
+                        margin-bottom: 15px;
+                        text-transform: capitalize;
+                        font-weight: 400;
+                        color: white;
+                    }
+                }
+                ul{
+                    li{
+                        text-transform: capitalize;
+                        a{
+                            display: inline-block;
+                            transition: all 0.3s ease;
+                            color: white;
+                            margin-bottom: 5px;
+                            font-weight: 400;
+                            transition: all 0.3s ease;
+                        }
+                    }
+                }
+            }
+            .footer__box--1{
+                padding-right: 50px;
+                .box__title{
+                    p{
+                        margin: 0;
+                    }
+                }
+                .site__btn{
+                    a{
+                        display: block;
+                        margin-bottom: 20px;
+                        img{
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+            .footer__box--2{
+                padding-right: 40px;
+                .download__btn{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    a{
+                        width: 48%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .footer__box--big{
+                width: 30%;
+            }
+            .footer__box--small{
+                width: 20%;
+                padding-left: 40px;
+            }
+        }
+        .footer__bottom{
+            border-top: 1px solid $border;
+            padding: 30px;
+            .copy-right{
+                *{
+                    color: white;
+                }
+                p{
+                    text-align: center;
+                    text-transform: capitalize;
+                    a{
+                        text-transform: uppercase;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .footer{
+        &__container{
+            width: 100%;
+            .footer__top{
+                padding: 40px 30px;
+                .footer__box--big{
+                    width: 30%;
+                }
+                .footer__box--small{
+                    width: 20%;
+                    padding-left: 20px;
+                }
+                .footer__box--1{
+                    padding-right: 25px;
+                    .site__btn{
+                        a{
+                            margin-bottom: 5px;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .footer__box--2{
+                    padding-right: 10px;
+                    .download__btn{
+                        width: 100%;
+                        a{
+                            width: 48%;
+                        }
+                    }
+                }
+            }
+            .footer__bottom{
+                padding: 20px;
+            }
+        }
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .footer{
+        &__container{
+            .footer__top{
+                flex-direction: column;
+                .footer__box{
+                    width: 100%;
+                    padding: 0;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+.header{
+    padding: 15px 0;
+    margin-bottom: -77px;
+    &__container{
+        width: 1500px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .header__logo{
+            flex-basis: 30%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            a{
+                display: inline-flex;
+                align-items: center;
+                img{
+                    width: 160px;
+                }
+            }
+        }
+        .header__menu{
+            flex-basis: 70%;
+            display: flex;
+            justify-content: end;
+            ul.header__ul{
+                width: 550px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                li.header__li{
+                    a{
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .header__offcanvas{
+            display: none;
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .header{
+        padding: 20px 25px;
+        margin-bottom: -87px;
+        &__container{
+            width: 100%;
+            .header__logo{
+                width: 50%;
+            }
+            .header__menu{
+                display: none;
+            }
+            .header__offcanvas{
+                width: 50%;
+                display: flex;
+                justify-content: end;
+                i{
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+// // X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .header{
+        padding: 15px;
+        margin-bottom: -65px;
+        &__container{
+            .header__logo{
+                a{
+                    img{
+                        width: 120px;
+                    }
+                }
+            }
+            .header__menu{
+                display: none;
+            }
+            .header__offcanvas{
+                width: 50%;
+                i{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
