@@ -239,6 +239,7 @@
             flex-wrap: wrap;
             .testimonial__card{
                 width: 47%;
+                padding: 30px 30px 40px;
                 margin: 0 0 40px 0;
             }
         }
@@ -320,6 +321,7 @@
         &__container{
             .testimonial__card{
                 width: 100%;
+                padding: 20px 30px 30px;
             }
         }
     }

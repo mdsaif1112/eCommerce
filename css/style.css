@@ -642,6 +642,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .testimonial__container .testimonial__card {
     width: 47%;
+    padding: 30px 30px 40px;
     margin: 0 0 40px 0;
   }
   /* ========== Brands ========== */
@@ -703,6 +704,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .testimonial__container .testimonial__card {
     width: 100%;
+    padding: 20px 30px 30px;
   }
   /* ========== Brands ========== */
   .brands {
