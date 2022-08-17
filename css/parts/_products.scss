@@ -1,0 +1,113 @@
+/* ========== Products ========== */
+
+.products{
+    padding: 200px 0 150px;
+    &__container{
+        .products__title{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            form{
+                select#sort{
+                    text-transform: capitalize;
+                    padding: 5px;
+                    border: 2px solid $primary;
+                    color: $text;
+                    &:focus{
+                        outline: none;
+                    }
+                    option{
+                        font-size: 14px;
+                        text-transform: capitalize;
+                        &:hover{
+                            color: white;
+                            background: $primary;
+                        }
+                    }
+                }
+            }
+        }
+        .product__page__container{
+            margin-top: 50px;
+            width: 1260px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr) ;
+            justify-content: space-between;
+            align-content: space-between;
+            grid-gap: 30px;
+            .product{
+                width: 100%;
+                margin: 0;
+                transition: all 0.3s ease;
+                &:hover{
+                    transform: translateY(-10px);
+                }
+                img{
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                &__title{
+                    margin-bottom: 5px;
+                }
+                &__rating{
+                    margin-bottom: 5px;
+                }
+                &__price{
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        .products__navigation{
+            margin-top: 60px;
+            .navigation__pages{
+                .btn{
+                    margin: 0 5px;
+                    border-radius: 2px;
+                    padding: 5px 15px;
+                    background: white;
+                    color: $primary;
+                    &:hover{
+                        background: $primary;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px){
+
+    /* ========== Products ========== */
+
+    .products{
+        padding: 150px 30px 100px;
+        &__container{
+            .product__page__container{
+                width: 100%;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .products__navigation{
+                margin-top: 60px;
+            }
+        }
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px){
+    /* ========== Products ========== */
+
+    .products{
+        padding: 120px 20px 80px;
+        &__container{
+            .product__page__container{
+                margin-top: 40px;
+            }
+            .products__navigation{
+                margin-top: 40px;
+            }
+        }
+    }
+}

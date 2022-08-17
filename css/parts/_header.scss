@@ -32,6 +32,10 @@
                 justify-content: space-between;
                 align-items: center;
                 li.header__li{
+                    transition: all 0.3s ease;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
                     a{
                         text-transform: capitalize;
                         font-weight: 600;

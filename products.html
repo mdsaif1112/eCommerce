@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/02d211be8a.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><script src="https://kit.fontawesome.com/02d211be8a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>RedStore | eComerce website</title>
+    <title>Products | RedStore</title>
 </head>
 <body>
     <!-- Header -->
@@ -32,44 +31,23 @@
         </div>
     </header>
 
-    <!-- Hero -->
+    <!-- Latest Products -->
 
-   <section class="hero">
-    <div class="hero__container">
-        <div class="hero__title">
-            <h1>
-                give your workout a new style!
-            </h1>
-            <p>
-                Success isn't always about greatness. Its about consistency. Consistent hard work gains success. Greatness will come.
-            </p>
-            <a href="" class="btn hero__btn">about us</a>
+   <section class="products">
+    <div class="products__container container">
+        <div class="products__title">
+            <h3>all products</h3>
+            <form action="">
+                <select id="sort" name="sort">
+                  <option value="sort-by-title" selected>sort by title</option>
+                  <option value="sort-by-lower-price">sort by lower price</option>
+                  <option value="sort-by-higher-price">sort by higher price</option>
+                  <option value="sort-by-date">sort by date</option>
+                </select>
+              </form>
         </div>
-        <div class="hero__img">
-            <img src="images/image1.png" alt="">
-        </div>
-    </div>
-   </section>
+        <div class="product__page__container">
 
-   <!-- Catagories -->
-
-   <section class="catagory">
-    <div class="catagory__container container">
-        <a href=""><img src="images/category-1.jpg" alt=""></a>
-        <a href=""><img src="images/category-2.jpg" alt=""></a>
-        <a href=""><img src="images/category-3.jpg" alt=""></a>
-    </div>
-   </section>
-
-   <!-- Featured Products -->
-
-   <section class="featured-products">
-    <div class="featured__container container">
-        <div class="featured__title">
-            <h2>featured products</h2>
-            <hr>
-        </div>
-        <div class="product__container">
             <div class="product product--1">
                 <a href="#"><img src="images/product-1.jpg" alt=""></a>
                 <a href="#"><h4 class="product__title">red printed t-shirt</h4></a>
@@ -121,19 +99,7 @@
                 </div>
                 <span class="product__price">$54.99</span>
             </div>
-        </div>
-    </div>
-   </section>
 
-   <!-- Latest Products -->
-
-   <section class="latest-products">
-    <div class="latest__container container">
-        <div class="latest__title">
-            <h2>latest products</h2>
-            <hr>
-        </div>
-        <div class="product__container">
             <div class="product product--1">
                 <a href="#"><img src="images/product-5.jpg" alt=""></a>
                 <a href="#"><h4 class="product__title">puma gray sports shoes</h4></a>
@@ -238,105 +204,22 @@
                 <span class="product__price">$74.99</span>
             </div>
         </div>
-    </div>
-   </section>
-
-   <!-- Exclusive Product -->
-
-   <section class="exclusive-product">
-    <div class="exclusive__container container">
-        <div class="exclusive__img">
-            <img src="images/exclusive.png" alt="">
-        </div>
-        <div class="exclusive__details">
-            <h6>exclusive available on RedStore</h6>
-            <span class="exclusive__product__name">
-                smart band 4
-            </span>
-            <p>The Mi Smart Band 4 features a 39.9% larger than Mi Smart Band 3 AMOLED color full-touched display with adjustable brightness. So everything is clear as can be.</p>
-            <a class="btn exclusive__btn" href="#">buy now</a>
-        </div>
-    </div>
-   </section>
-
-   <!-- Testimonial -->
-
-   <section class="testimonial">
-    <div class="testimonial__container">
-        <div class="testimonial__card testimonial__card--1">
-            <div class="testimonial__review">
-                <i class="fa-solid fa-quote-left"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum odio ipsam saepe incidunt ad ex vel architecto voluptates amet beatae.</p>
-            </div>
-            <div class="testimonial__rating">
-                <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-            </div>
-            <div class="testimonial__client">
-                <img src="images/user-1.png" alt="">
-                <h4>sean parker</h4>
-            </div>
-        </div>
-
-        <div class="testimonial__card testimonial__card--2">
-            <div class="testimonial__review">
-                <i class="fa-solid fa-quote-left"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum odio ipsam saepe incidunt ad ex vel architecto voluptates amet beatae.</p>
-            </div>
-            <div class="testimonial__rating">
-                <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-            </div>
-            <div class="testimonial__client">
-                <img src="images/user-2.png" alt="">
-                <h4>sean parker</h4>
-            </div>
-        </div>
-
-        <div class="testimonial__card testimonial__card--3">
-            <div class="testimonial__review">
-                <i class="fa-solid fa-quote-left"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum odio ipsam saepe incidunt ad ex vel architecto voluptates amet beatae.</p>
-            </div>
-            <div class="testimonial__rating">
-                <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-            </div>
-            <div class="testimonial__client">
-                <img src="images/user-3.png" alt="">
-                <h4>sean parker</h4>
+        <div class="products__navigation">
+            <div class="navigation__pages">
+                <div class="navigation__pages__btn">
+                    <a href="" class="navigation__btn--1 btn">1</a>
+                    <a href="" class="navigation__btn--2 btn">2</a>
+                    <a href=""class="navigation__btn--3 btn">3</a>
+                    <a href=""class="navigation__btn--4 btn">4</a>
+                </div>
             </div>
         </div>
     </div>
    </section>
 
-   <!-- Bands -->
-
-   <section class="brands">
-    <div class="brands__container container">
-        <img src="images/logo-godrej.png" alt="">
-
-        <img src="images/logo-oppo.png" alt="">
-
-        <img src="images/logo-coca-cola.png" alt="">
-
-        <img src="images/logo-paypal.png" alt="">
-
-        <img src="images/logo-philips.png" alt="">
-    </div>
-   </section>
 
 
-   <!-- Footer -->
+    <!-- Footer -->
 
    <footer class="footer">
     <div class="footer__container">
@@ -395,6 +278,5 @@
         </div>
     </div>
    </footer>
-
 </body>
 </html>
