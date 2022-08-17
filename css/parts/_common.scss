@@ -19,7 +19,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     .product{
         width: 23%;
         transition: all 0.3s ease;
@@ -87,6 +87,17 @@ hr{
         .product{
             width: 47%;
             margin-bottom: 40px;
+        }
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px){
+    .product__container{
+        width: 100%;
+        .product{
+            width: 47%;
+            margin-bottom: 30px;
         }
     }
 }

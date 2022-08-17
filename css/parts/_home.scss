@@ -61,23 +61,26 @@
     }
 }
 
-/* ========== Exclusive Products ========== */
+/* ========== Exclusive Product ========== */
 
-.exclusive-products{
+.exclusive-product{
     background: radial-gradient(#fff, #ffd6d6);
     padding: 80px 0;
     .exclusive__container{
-        width: 1200px;
+        width: 1400px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         .exclusive__img{
+            text-align: center;
+            width: 45%;
             img{
-                width: 550px;
+                width: 80%;
             }
         }
         .exclusive__details{
+            width: 55%;
             h6{
                 margin-bottom: 10px;
             }
@@ -106,6 +109,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         .testimonial__card{
             width: 370px;
             display: flex;
@@ -154,6 +158,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         img{
             width: 180px;
             filter: grayscale(100%);
@@ -188,6 +193,68 @@
             }
         }
     }
+
+    /* ========== Featured Products ========== */
+
+    .featured-products{
+        padding: 100px 30px 60px;
+    }
+
+    /* ========== Leatest Products ========== */
+
+    .latest-products{
+        padding: 0 30px 60px;
+    }
+
+    /* ========== Exclusive Products ========== */
+
+    .exclusive-product{
+        padding: 60px 30px;
+        .exclusive__container{
+            width: 100%;
+            .exclusive__img{
+                width: 50%;
+                img{
+                    width: 80%;
+                }
+            }
+            .exclusive__details{
+                width: 50%;
+                span.exclusive__product__name{
+                    margin-bottom: 5px;
+                }
+                p{
+                    padding-right: 40px;
+                }
+            }
+        }
+    }
+
+    /* ========== Testimonial ========== */
+
+    .testimonial{
+        padding: 80px 30px 40px;
+        &__container{
+            width: 100%;
+            flex-wrap: wrap;
+            .testimonial__card{
+                width: 47%;
+                margin: 0 0 40px 0;
+            }
+        }
+    }
+
+    /* ========== Brands ========== */
+
+    .brands{
+        padding: 0 30px 50px;
+        &__container{
+            width: 100%;
+            img{
+                margin-bottom: 30px;
+            }
+        }
+    }
 }
 
 // X-Small devices (portrait phones, less than 576px)
@@ -205,6 +272,64 @@
             }
             .hero__img{
                 display: none;
+            }
+        }
+    }
+
+    /* ========== Featured Products ========== */
+
+    .featured-products{
+        padding: 80px 20px 50px;
+    }
+
+    /* ========== Leatest Products ========== */
+
+    .latest-products{
+        padding: 0 30px 50px;
+    }
+
+    /* ========== Exclusive Products ========== */
+
+    .exclusive-product{
+        padding: 50px 20px;
+        .exclusive__container{
+            flex-direction: column;
+            .exclusive__img{
+                width: 100%;
+                margin-bottom: 50px;
+                img{
+                    width: 80%;
+                }
+            }
+            .exclusive__details{
+                width: 100%;
+                p{
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    /* ========== Testimonial ========== */
+
+    .testimonial{
+        padding: 60px 20px 20px;
+        &__container{
+            .testimonial__card{
+                width: 100%;
+            }
+        }
+    }
+
+    /* ========== Brands ========== */
+
+    .brands{
+        padding: 0 20px;
+        &__container{
+            width: 100%;
+            img{
+                width: 48%;
+                margin-bottom: 30px;
             }
         }
     }

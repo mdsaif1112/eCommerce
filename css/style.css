@@ -71,6 +71,9 @@ h6 {
   h1 {
     font-size: 40px;
   }
+  h4 {
+    font-size: 16px;
+  }
 }
 p, a {
   color: #555;
@@ -106,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .product__container .product {
   width: 23%;
@@ -175,6 +178,15 @@ hr {
   .product__container .product {
     width: 47%;
     margin-bottom: 40px;
+  }
+}
+@media (max-width: 575.98px) {
+  .product__container {
+    width: 100%;
+  }
+  .product__container .product {
+    width: 47%;
+    margin-bottom: 30px;
   }
 }
 .header {
@@ -467,31 +479,38 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-/* ========== Exclusive Products ========== */
-.exclusive-products {
+/* ========== Exclusive Product ========== */
+.exclusive-product {
   background: radial-gradient(#fff, #ffd6d6);
   padding: 80px 0;
 }
-.exclusive-products .exclusive__container {
-  width: 1200px;
+.exclusive-product .exclusive__container {
+  width: 1400px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
-.exclusive-products .exclusive__container .exclusive__img img {
-  width: 550px;
+.exclusive-product .exclusive__container .exclusive__img {
+  text-align: center;
+  width: 45%;
 }
-.exclusive-products .exclusive__container .exclusive__details h6 {
+.exclusive-product .exclusive__container .exclusive__img img {
+  width: 80%;
+}
+.exclusive-product .exclusive__container .exclusive__details {
+  width: 55%;
+}
+.exclusive-product .exclusive__container .exclusive__details h6 {
   margin-bottom: 10px;
 }
-.exclusive-products .exclusive__container .exclusive__details span.exclusive__product__name {
+.exclusive-product .exclusive__container .exclusive__details span.exclusive__product__name {
   display: block;
   font-size: 36px;
   font-weight: 700;
   text-transform: capitalize;
 }
-.exclusive-products .exclusive__container .exclusive__details p {
+.exclusive-product .exclusive__container .exclusive__details p {
   padding-right: 100px;
   margin-bottom: 20px;
 }
@@ -507,6 +526,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .testimonial__container .testimonial__card {
   width: 370px;
@@ -554,6 +574,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .brands__container img {
   width: 180px;
@@ -578,6 +599,58 @@ h1, h2, h3, h4, h5, h6 {
   .hero__container .hero__img img {
     width: 100%;
   }
+  /* ========== Featured Products ========== */
+  .featured-products {
+    padding: 100px 30px 60px;
+  }
+  /* ========== Leatest Products ========== */
+  .latest-products {
+    padding: 0 30px 60px;
+  }
+  /* ========== Exclusive Products ========== */
+  .exclusive-product {
+    padding: 60px 30px;
+  }
+  .exclusive-product .exclusive__container {
+    width: 100%;
+  }
+  .exclusive-product .exclusive__container .exclusive__img {
+    width: 50%;
+  }
+  .exclusive-product .exclusive__container .exclusive__img img {
+    width: 80%;
+  }
+  .exclusive-product .exclusive__container .exclusive__details {
+    width: 50%;
+  }
+  .exclusive-product .exclusive__container .exclusive__details span.exclusive__product__name {
+    margin-bottom: 5px;
+  }
+  .exclusive-product .exclusive__container .exclusive__details p {
+    padding-right: 40px;
+  }
+  /* ========== Testimonial ========== */
+  .testimonial {
+    padding: 80px 30px 40px;
+  }
+  .testimonial__container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .testimonial__container .testimonial__card {
+    width: 47%;
+    margin: 0 0 40px 0;
+  }
+  /* ========== Brands ========== */
+  .brands {
+    padding: 0 30px 50px;
+  }
+  .brands__container {
+    width: 100%;
+  }
+  .brands__container img {
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 575.98px) {
   /* ========== Hero ========== */
@@ -589,5 +662,51 @@ h1, h2, h3, h4, h5, h6 {
   }
   .hero__container .hero__img {
     display: none;
+  }
+  /* ========== Featured Products ========== */
+  .featured-products {
+    padding: 80px 20px 50px;
+  }
+  /* ========== Leatest Products ========== */
+  .latest-products {
+    padding: 0 30px 50px;
+  }
+  /* ========== Exclusive Products ========== */
+  .exclusive-product {
+    padding: 50px 20px;
+  }
+  .exclusive-product .exclusive__container {
+    flex-direction: column;
+  }
+  .exclusive-product .exclusive__container .exclusive__img {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .exclusive-product .exclusive__container .exclusive__img img {
+    width: 80%;
+  }
+  .exclusive-product .exclusive__container .exclusive__details {
+    width: 100%;
+  }
+  .exclusive-product .exclusive__container .exclusive__details p {
+    padding-right: 0;
+  }
+  /* ========== Testimonial ========== */
+  .testimonial {
+    padding: 60px 20px 20px;
+  }
+  .testimonial__container .testimonial__card {
+    width: 100%;
+  }
+  /* ========== Brands ========== */
+  .brands {
+    padding: 0 20px;
+  }
+  .brands__container {
+    width: 100%;
+  }
+  .brands__container img {
+    width: 48%;
+    margin-bottom: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
