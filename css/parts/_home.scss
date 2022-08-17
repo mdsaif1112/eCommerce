@@ -279,7 +279,7 @@
     /* ========== Featured Products ========== */
 
     .featured-products{
-        padding: 80px 20px 50px;
+        padding: 80px 20px;
     }
 
     /* ========== Leatest Products ========== */
@@ -303,6 +303,9 @@
             }
             .exclusive__details{
                 width: 100%;
+                span.exclusive__product__name{
+                    font-size: 28px;
+                }
                 p{
                     padding-right: 0;
                 }
