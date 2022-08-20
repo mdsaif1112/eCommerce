@@ -84,10 +84,6 @@
     .products{
         padding: 150px 30px 100px;
         &__container{
-            .product__page__container{
-                width: 100%;
-                grid-template-columns: repeat(2, 1fr);
-            }
             .products__navigation{
                 margin-top: 60px;
             }
@@ -102,7 +98,7 @@
     .products{
         padding: 120px 20px 80px;
         &__container{
-            .product__page__container{
+            .product__container{
                 margin-top: 40px;
             }
             .products__navigation{

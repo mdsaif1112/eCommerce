@@ -70,6 +70,40 @@
                 i{
                     font-size: 40px;
                 }
+                .offcanvas{
+                    position: fixed;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    transform: translateX(100%);
+                    transition: all 0.3s ease;
+                    background: rgba($color: #000000, $alpha: 0.9);
+                    padding: 30px;
+                    &__close__btn{
+                        color: white;
+                        text-align: right;
+                    }
+                    &__menu{
+                        padding: 200px 0;
+                        .offcanvas__ul{
+                            li{
+                                text-align: center;
+                                margin-bottom: 25px;
+                                a{
+                                    color: white;
+                                    font-size: 36px;
+                                    font-weight: 500;
+                                    text-transform: capitalize;
+                                }
+                            }
+                        }
+                    }
+                }
+                .offcanvas__in{
+                    transform: translateX(0);
+                    transition: all 0.3s ease;
+                }
             }
         }
     }
@@ -96,7 +130,21 @@
                 i{
                     font-size: 30px;
                 }
-            }
+                .offcanvas{
+                    padding: 20px;
+                    &__menu{
+                        padding: 80px 0;
+                        .offcanvas__ul{
+                            li{
+                                margin-bottom: 20px;
+                                a{
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }    
         }
     }
 }
